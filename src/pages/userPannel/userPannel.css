@@ -1,0 +1,71 @@
+.user-pannel{
+    max-width: 750px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.user-info,
+.user-purchase{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 550;
+}
+.user-info{
+    width: 60%;
+    height: 25vh;
+    padding-left: 30px;
+    justify-content: space-evenly;
+}
+.user-purchase{
+    width: 35%;
+    height: auto;
+    justify-content: space-between;
+}
+.product-detail,
+.product-detail-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+
+.product-detail-total{
+    border-top: 2px dotted black;
+    padding-top: 15px;
+}
+.user-purchase button{
+    width: 85%;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #2563eb;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+/*  media queries for user pannel */
+@media screen and (max-width:770px) {
+    .user-pannel{
+        max-width: 400px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+    .user-info,
+    .user-purchase{
+        font-size: 16px;
+    }
+    .user-info{
+        width: 90%;
+    }
+    .user-purchase{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+}
